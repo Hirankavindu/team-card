@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="testimonial-section">
+        <div class="inner-width">
+            <h1>Our Team Members</h1>
+            <div class="testimonial-pics">
+                <img src="./img/123456.jpg" alt="test-1" class="active">
+                <img src="./img/glass 2.jpg" alt="test-2">
+                <img src="./img/glass.jpg" alt="test-3">
+                <img src="./img/GUTAR.jpg" alt="test-4">
+                <img src="./img/new.jpg" alt="test-5">
+            </div>
+            <div class="testimonial-contents">
+                <div class="testimonial active" id="test-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus, voluptatum
+                        perferendis quibusdam facere  dolores officiis! Eaque assumenda animi facere harum ipsum
+                        nihil commodi, vitae soluta quas aperiam saepe.</p>
+                        <span class="description">Hiran / Developer</span>
+                </div>
+
+                <div class="testimonial" id="test-2">
+                    <p>Lorem ipsum dolor sit amet consectetur  tempore dolores officiis! Eaque assumenda animi facere harum ipsum
+                        nihil commodi, vitae soluta quas aperiam saepe.</p>
+                        <span class="description">Yashod / Developer</span>
+                </div>
+
+                <div class="testimonial" id="test-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus, voluptatum
+                        perferendis quibusdam facere tempore.</p>
+                        <span class="description">Akash / Developer</span>
+                </div>
+
+                <div class="testimonial" id="test-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus, voluptatum
+                          facere harum ipsum
+                        nihil commodi, vitae soluta quas aperiam saepe.</p>
+                        <span class="description">Wishmi / Developer</span>
+                </div>
+
+                <div class="testimonial" id="test-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident necessitatibus, voluptatum
+                        perferendis quibusdam facere tempore dolores officiis! Eaque assumenda animi facere harum ipsum
+                        nihil </p>
+                        <span class="description">Sachini / Developer</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.testimonial-pics img').click(function(){
+            $(".testimonial-pics img").removeClass("active");
+            $("this").addClass("active");
+
+            $(".testimonial").removeClass("active");
+            $("#"+$(this).attr("alt")).addClass("active");
+        });
+    </script>
+
+</body>
+
+</html>
